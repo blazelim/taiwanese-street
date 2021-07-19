@@ -115,3 +115,13 @@ input+input {
   margin-bottom: 2px;
 }
 
+/* No match */
+.error-page {
+  text-align: center;
+}
+
+.error-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
