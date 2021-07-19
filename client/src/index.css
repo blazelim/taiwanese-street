@@ -11,3 +11,117 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Nav */
+
+.header {
+  background-color: lightsalmon;
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.company {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  margin-top: 0;
+  padding-right: 20px;
+}
+
+.nav-list li {
+  display: inline-block;
+  padding: 0 10px 0 10px;
+}
+
+.link {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: white;
+  font-size: 20px;
+}
+
+.cart {
+  font-size: 22px;
+}
+
+.cart:hover {
+  font-size: 26px;
+}
+
+/* Login/signup */
+
+form {
+  width: 80%;
+  margin: 0 auto;
+}
+
+label,
+input {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+label {
+  width: 30%;
+  text-align: right;
+}
+
+label+input {
+  width: 30%;
+  margin: 0 30% 0 4%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+input+input {
+  float: right;
+}
+
+.form-title {
+  text-align: center;
+}
+
+.submit-form {
+  text-align: center;
+}
+
+.submit-form button {
+  text-align: center;
+}
+
+.redirect {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.redirect button {
+  padding: 0;
+  margin: 0;
+}
+
+.redirect p {
+  padding: 0;
+  margin-bottom: 2px;
+}
+
+/* No match */
+.error-page {
+  text-align: center;
+}
+
+.error-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
