@@ -1,0 +1,15 @@
+.items {
+  width: 250px;
+  height: 100%;
+}
+
+.items img {
+  width: 200px;
+  height: 200px;
+}
+
+.dropdown {
+  margin-right: 1rem;
+  border: 2px solid #eee;
+  padding: 0.3rem 0.8rem;
+}
