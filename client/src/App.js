@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-// deleted app contents
-=======
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -47,7 +44,7 @@ function App() {
             <Switch>
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
-              <Route component={NoMatch} />
+              <Route exact path="/signup" component={Signup} />
             </Switch>
         </div>
       </Router>
@@ -56,4 +53,3 @@ function App() {
 }
 
 export default App;
->>>>>>> develop
