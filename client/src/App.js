@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import NoMatch from './pages/NoMatch';
+import Order from './pages/Order';
 
 import {
   ApolloClient,
@@ -44,7 +45,8 @@ function App() {
             <Switch>
               <Route exact path="/login" component={Login} />
               <Route exact path="/signup" component={Signup} />
-              <Route exact path="/signup" component={Signup} />
+              <Route exact path="/order" component={Order} />
+              <Route component={NoMatch} />
             </Switch>
         </div>
       </Router>
