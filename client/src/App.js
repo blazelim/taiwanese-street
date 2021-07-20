@@ -6,6 +6,9 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import NoMatch from './pages/NoMatch';
 import Order from './pages/Order';
+import Cart from './components/Cart';
+import { Provider } from 'react-redux';
+import store from './redux/store';
 
 import {
   ApolloClient,
@@ -41,13 +44,16 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <div>
-            <Nav />
-            <Switch>
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/signup" component={Signup} />
-              <Route exact path="/order" component={Order} />
-              <Route component={NoMatch} />
-            </Switch>
+          <Provider store={store}>
+              <Nav />
+              <Switch>
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/signup" component={Signup} />
+                <Route exact path="/order" component={Order} />
+                <Route exact path="/cart" component={Cart} />
+                <Route component={NoMatch} />
+              </Switch>
+          </Provider>
         </div>
       </Router>
     </ApolloProvider>
