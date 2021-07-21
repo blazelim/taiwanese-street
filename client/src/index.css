@@ -198,6 +198,10 @@ input + input {
   margin-bottom: 2px;
 }
 
+.center {
+  text-align: center;
+}
+
 /* No match */
 .error-page {
   text-align: center;
