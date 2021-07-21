@@ -17,12 +17,12 @@ const menu = (
   </Menu>
 );
 
-const CardItem = () => {
+const CardItem = ({ img: { src, alt }, title, price }) => {
   return (
     <Card className="items">
-      <img src="../../../images/meat/crab-stick.jpg" alt="" />
-      <h3>title: Crab Stick</h3>
-      <h3>price: $ 0.5</h3>
+      <img src={src} alt={alt} />
+      <h3>{title}</h3>
+      <h3>Price: {price}</h3>
       <Dropdown overlay={menu} trigger={['click']} className="dropdown">
         <a className="ant-dropdown-link" onClick={e => e.preventDefault()}>
           1 <DownOutlined />
