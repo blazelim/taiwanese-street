@@ -1,34 +1,17 @@
-import React, { useEffect, useState } from "react";
-import { Card, Row, Col } from 'antd';
-import CardItem from "./../components/CardItem";
+import React from "react";
+import ProductList from '../components/ProductList';
+import { Row } from 'antd';
 
 function Order() {
+  document.title = 'Fried Snacks Diner - Order';
   return (
-    <>
-      <h1>Order Page</h1>
+    <div className="container">
       <div className="site-card-wrapper">
-        <Row justify="center">
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
-          <Col xs={{ span: 24 }} lg={{ span: 6, offset: 2 }}>
-            <CardItem />
-          </Col>
+        <Row justify="left">
+              <ProductList />
         </Row>
-      </div>
-    </>
+          </div>
+    </div>
   )
 }
 

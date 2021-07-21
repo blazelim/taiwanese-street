@@ -5,6 +5,7 @@ import Auth from '../utils/auth';
 import { ADD_USER } from '../utils/mutations';
 
 function Signup(props) {
+  document.title = 'Fried Snacks Diner - Signup';
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [addUser] = useMutation(ADD_USER);
 
@@ -79,8 +80,8 @@ function Signup(props) {
         </div>
       </form>
       <div className="redirect">
-          <p className="redirect-text">Already a user?</p>
-          <Link to="/login"><button className="redirect-button">Login</button></Link>
+        <p className="redirect-text">Already a user?</p>
+        <Link to="/login"><button className="redirect-button">Login</button></Link>
       </div>
     </div>
   );

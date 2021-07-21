@@ -3,8 +3,10 @@ import { useMutation } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
+import CategoryMenu from '../components/CategoryMenu';
 
 function Login(props) {
+  document.title = 'Fried Snacks Diner - Login';
   const [formState, setFormState] = useState({ email: '', password: '' });
   const [login, { error }] = useMutation(LOGIN);
 
@@ -63,8 +65,8 @@ function Login(props) {
         </div>
       </form>
       <div className="redirect">
-          <p className="redirect-text">Not a user?</p>
-          <Link to="/signup"><button className="redirect-button">Signup</button></Link>
+        <p className="redirect-text">Not a user?</p>
+        <Link to="/signup"><button className="redirect-button">Signup</button></Link>
       </div>
     </div>
   );

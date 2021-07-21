@@ -1,0 +1,20 @@
+.home-card-main {
+  display: flex;
+  width: 100%;
+  border: 2px dashed rgba(223, 131, 115, 0.5);
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.home-card-main img {
+  width: 30vw;
+  max-width: 200px;
+  height: 30vw;
+  max-height: 200px;
+  border-radius: 48%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.home-card-content {
+  display: inline-block;
+}
