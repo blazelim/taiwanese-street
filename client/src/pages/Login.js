@@ -3,7 +3,6 @@ import { useMutation } from '@apollo/client';
 import { Link } from 'react-router-dom';
 import { LOGIN } from '../utils/mutations';
 import Auth from '../utils/auth';
-import CategoryMenu from '../components/CategoryMenu';
 
 function Login(props) {
   document.title = 'Fried Snacks Diner - Login';
