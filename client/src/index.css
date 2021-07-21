@@ -125,3 +125,9 @@ input+input {
   color: black;
   font-size: 24px;
 }
+
+/* Cart */
+
+.cart {
+  text-align: center;
+}
