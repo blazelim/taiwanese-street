@@ -122,6 +122,17 @@ code {
   font-size: 20px;
 }
 
+.logout {
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+
+.logout:hover {
+  color: white;
+  font-size: 20px;
+}
+
 .cart {
   font-size: 22px;
 }
@@ -187,6 +198,10 @@ input + input {
   margin-bottom: 2px;
 }
 
+.center {
+  text-align: center;
+}
+
 /* No match */
 .error-page {
   text-align: center;
@@ -196,4 +211,10 @@ input + input {
   text-decoration: none;
   color: black;
   font-size: 24px;
+}
+
+/* Cart */
+
+.cart {
+  text-align: center;
 }

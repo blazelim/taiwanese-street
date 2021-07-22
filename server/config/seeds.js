@@ -116,7 +116,7 @@ db.once('open', async () => {
           'eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor',
         image: 'pepper-f.jpg',
         price: 5.99,
-      },
+      }
   ]);
 
   console.log('products seeded');

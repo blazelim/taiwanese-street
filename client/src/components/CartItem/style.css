@@ -1,0 +1,22 @@
+.cart-image {
+    width: 200px;
+    height: 150px;
+    border-radius: 1rem;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.cart-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cart:hover {
+    font-size: 22px;
+}
+
+.display-button {
+    font-size: 22px;
+    text-align: center;
+}
