@@ -10,10 +10,10 @@ function Nav() {
     if (Auth.loggedIn()) {
       return (
         <div>
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a className='logout' href="/" onClick={() => Auth.logout()}>
-              Logout
-            </a>
+          {/* this is not using the Link component to logout or user and then refresh the application to the start */}
+          <a className='logout' href="/" onClick={() => Auth.logout()}>
+            Logout
+          </a>
         </div>
       );
     } else {
@@ -32,14 +32,14 @@ function Nav() {
         Fried Snacks Diner
       </h1>
       <nav className="nav">
-      <ul className="nav-list">
-        <li><Link className="link" to="/">Menu</Link></li>
-        <li><Link className="link" to="/order">Order now</Link></li>
-        <li><Link className="link" to="/location">Location</Link></li>
-        <li><Link className="link" to="/about">About</Link></li>
-        <li><Link className="link cart" to="/cart">&#128722;</Link></li>
-        <li>{showNavigation()}</li>
-      </ul>
+        <ul className="nav-list">
+          <li><Link className="link" to="/">Menu</Link></li>
+          <li><Link className="link" to="/order">Order now</Link></li>
+          <li><Link className="link" to="/location">Location</Link></li>
+          <li><Link className="link" to="/about">About</Link></li>
+          <li><Link className="link cart" to="/cart">&#128722;</Link></li>
+          <li>{showNavigation()}</li>
+        </ul>
       </nav>
     </header>
   );
