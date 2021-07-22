@@ -3,7 +3,7 @@ import React from 'react';
 const About = () => {
   document.title = 'Fried Snacks Diner - About';
   const bgImgStyle = {
-    background: "url('../../images/banner/about-us.jpg') center center no-repeat",
+    background: "url('../../images/about-us.jpg') center center no-repeat",
     height: '100%',
     filter: "blur(.125rem)",
     height: "28rem"
