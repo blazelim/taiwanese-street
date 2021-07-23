@@ -1,0 +1,16 @@
+.product-parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+
+.product-child {
+    display: inline-block;
+    margin: 20px;
+}
+
+.product-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+}
